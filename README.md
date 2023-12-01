@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Promptopia
 
-## Getting Started
+Promptopia is an open-source AI prompting tool for modern world to discover, create and share creative prompts
 
-First, run the development server:
+[View live website ↗](https://promptopia-two-inky.vercel.app/)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Features](#features)
+- [Acknowledgments](#acknowledgments)
+
+## Installation
+
+To run Promptopia locally, use the following npm commands:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# open localhost:3000 to view the running website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Sign In
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   Utilize the `next-auth` package in conjunction with Google OAuth 2.0 for authentication.
 
-## Learn More
+2. Create Prompt
 
-To learn more about Next.js, take a look at the following resources:
+   Establish a connection to MongoDB using Mongoose to store user prompts. Leverage the Next.js API routes feature for seamless integration.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Profile Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   Each user has a dedicated profile page where they can store all their prompts. The prompt's owner can edit or delete it at their discretion.
 
-## Deploy on Vercel
+4. Search
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Users have the ability to search prompts based on the username, the content of the prompt, or the associated tag.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Responsive Design
+
+   All pages have been designed to be responsive, ensuring a consistent experience across various devices and screen sizes.
+
+## Acknowledgments
+
+- Based on [JavaScript Mastery Next.js 14 tutorial](https://www.youtube.com/watch?v=wm5gMKuwSYk)

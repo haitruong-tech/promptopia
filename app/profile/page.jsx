@@ -47,6 +47,10 @@ const MyProfile = () => {
     }
   };
 
+  const handleTagClick = (tag) => {
+    router.push(`/?search=${tag}`);
+  };
+
   return (
     <Profile
       name="My"
@@ -54,6 +58,7 @@ const MyProfile = () => {
       data={posts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}
+      handleTagClick={handleTagClick}
     />
   );
 };
